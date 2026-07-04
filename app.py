@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6, p, div, label {
 
 .stButton > button {
     background-color: white;
-    color: #0B1F4D;
+    color: black !important;   /* 버튼 글씨를 검은색으로 변경 */
     font-weight: bold;
     border-radius: 10px;
     padding: 0.5em 1.2em;
@@ -25,11 +25,10 @@ h1, h2, h3, h4, h5, h6, p, div, label {
 
 .stButton > button:hover {
     background-color: #d9d9d9;
-    color: #0B1F4D;
+    color: black !important;   /* 마우스를 올려도 검은색 유지 */
 }
 </style>
 """, unsafe_allow_html=True)
-
 # 화면 상태 저장
 if "page" not in st.session_state:
     st.session_state.page = "main"
